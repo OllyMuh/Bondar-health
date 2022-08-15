@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+
+{% load static %}
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Bondarevafitnessdoctor">
+    <meta name="keywords" content="Yoga, health, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body style="background-color: #787878">
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section set-bg" data-setbg="{% static 'img/header-bg.png' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="main-menu">
+                        <div class="logo">
+                            <a href="{% url 'pages:homepage' %}">
+<!--                                <img src="{% static 'img/logo.png' %}" alt="">-->
+                            </a>
+                        </div>
+                        <nav class="inner-main-navbar mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'pages:homepage' %}">Главная</a></li>
+                                <li><a href="{% url 'pages:about_us' %}">О нас</a></li>
+                                <li><a href="{% url 'elements:elements' %}">Тренажеры</a></li>
+                                <li><a href="{% url 'blog:blog_list' %}">Блог</a></li>
+                                <li><a href="{% url 'pages:contact' %}">Расписание и контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div id="mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Single Section Begin -->
+    <section class="hero-single set-bg spad" data-setbg="{% static 'img/aboutus_3.JPG' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="hero-item">
+                        <span class="tickler-text">#bondarevafitnessdoctor</span>
+                        <h2 style="color: white">О нас</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--     Hero Single Section End-->
+
+    <!-- About Us Section Begin -->
+    <section class="about-us set-bg spad" %}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div style="margin-left: 15%" class="about-lt">
+                        <div class="section-title">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h2>Начало...</h2>
+                        </div>
+                        <p style="color: #464646">
+                            Здравствуйте! Меня зовут Надежда Бондарева. Я очень рада, что вы думаете о своем
+                            здоровье и благополучии и уже интересуетесь, как сохранить его в лучшей форме. Готова
+                            ответить на все ваши вопросы и открыть секреты наилучшего самочувствия!
+                        </p>
+                        <p style="color: #464646">
+                            Я помогу вам восстановить и поддерживать жизненные силы с помощью техник йоги и специально подобранных упражнений.
+                            Уже более 20 лет я бережно веду каждого к избавлению от боли, плохого самочувствия и настроения.
+                            Высшее медицинское образование и постоянная забота о вас дарят мне высокий уровень доверия,
+                            которым я очень дорожу.
+                        </p>
+                        <p style="color: #464646">
+                            Я приглашаю вас провести время с пользой для себя в дружеской и спокойной атмосфере. Мы вместе
+                            сможем не только достичь поставленные цели, но и открыть в себе удивительные возможности!
+                        </p>
+<!--                        <p style="color: #464646">Родные, милые, привет! Хочу открыть один секрет!<br>-->
+<!--                        Откуда счастье получать? И душу радостью питать?<br>-->
+<!--                        Семья, детишки, дружбы свет, здоровье, мир и жизнь сто лет!<br>-->
+<!--                        А что по-Вашему "СЕМЬЯ"? - Муж, дочери и сыновья!<br>-->
+<!--                        Да, это верно, спора нет! Но есть ещё один момент...<br>-->
+<!--                        Уже почти пятнадцать лет здесь, в Витебске, мы точим силуэт.<br>-->
+<!--                        Горит на тренировках свет, любовью, дружбой он согрет!<br>-->
+<!--                        За это время многое прошло, воды, конечно, ох как утекло!<br>-->
+<!--                        Рожденья, свадьбы, новые работы, печали, новоселья,<br>-->
+<!--                        Повороты судеб, радость, горе, смех, несчастья и невиданный успех!<br>-->
+<!--                        Потеря близких, переезды, счастье, заказ фортуны и судьбы ненастье.<br>-->
+<!--                        Всё это пережили вместе мы с Вами больше, чем раз двести!<br>-->
+<!--                        Признаюсь честно, правды не тая, ВЫ тоже МОЯ КРЕПКАЯ СЕМЬЯ!</p>-->
+<!--                        <a href="#" class="primary-btn">Читать</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="about-img">
+                        <img src="{% static 'img/nadezda.JPG' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us section End -->
+
+    <!-- About Counter Begin -->
+    <div class="about-counter set-bg spad" data-setbg="{% static 'img/counter-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 text-center">
+                    <div class="single-counter">
+                        <i class="flaticon-001-meditation"></i>
+                        <span class="counter-num counter">325</span>
+                        <span>Активных участников</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 text-center">
+                    <div class="single-counter">
+                        <i class="flaticon-011-hamsa"></i>
+                        <span class="counter-num counter">1</span>
+                        <span>Инструктор</span>
+                    </div>
+                </div>
+<!--                <div class="col-lg-3 col-md-3 text-center">-->
+<!--                    <div class="single-counter">-->
+<!--                        <i class="flaticon-010-chakra"></i>-->
+<!--                        <span class="counter-num counter">49</span>-->
+<!--                        <strong>k</strong>-->
+<!--                        <span>Подписчиков</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-3 text-center">-->
+<!--                    <div class="single-counter">-->
+<!--                        <i class="flaticon-009-yoga-1"></i>-->
+<!--                        <span class="counter-num counter">15</span>-->
+<!--                        <span>Орденов и медалей</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- About Counter End -->
+
+    <!-- Gallery Section Begin -->
+    <section  class="about-team spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 heading-wrap text-center mb-5">
+                    <h2 class="mb-5">Фотогалерея</h2>
+                </div>
+                </div>
+
+                <div class="row justify-content-center mb-5" data-aos="fade">
+                  <div class="filters text-center button-group col-md-12">
+                      <button class="primary-btn" style="margin: 10px"><a style="color: azure" href="{% url 'pages:about_us' %}">Все</a></button>
+                      {% for category_photo in categories %}
+                      <button class="primary-btn" style="margin: 10px">
+                          <a style="color: azure" href="{% url 'pages:photo_filter' category_photo.pk %}">{{category_photo.title}}</a></button>
+                      {% endfor %}
+                  </div>
+                </div>
+
+                <div id="posts" class="row no-gutter" style="position: relative">
+                    {% for photo in photos %}
+                    <div class="item col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+<!--                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" style="position: absolute; left: 0px; top: 0px;">-->
+<!--                        <a href="#" class="item-wrap fancybox">-->
+<!--                          <span class="icon-search2"></span>-->
+                        <img class="img-fluid" src="{{photo.image.url}}" alt="foto">
+<!--                        </a>-->
+                    </div>
+                    {% endfor %}
+<!--                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">-->
+<!--                        <a href="#" class="item-wrap fancybox">-->
+<!--                          <span class="icon-search2"></span>-->
+<!--                          <img class="img-fluid" src="{% static 'img/yoga-2.jpg' %}">-->
+<!--                        </a>-->
+<!--                    </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Begin -->
+
+    <!-- Map Section Begin -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDhhX37AVCXLeNIgGYchUyKnU-5BMUolew&q=/улица+Кутузова+2A,+Витебск/" height="590" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- Map Section End -->
+
+   <!-- Footer Section Begin -->
+    <footer class="footer-section set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-text">
+                            <a href="{% url 'pages:homepage' %}" class="logo"><img src="{% static 'img/footer-logo.png' %}" alt=""></a>
+                            <p>Физические упражнения могут заменить множество лекарств, но ни одно лекарство в мире не может заменить физические упражнения.</p>
+                            <ul>
+                                <li><a href="https://m.facebook.com/bondarevafitnessdoktor-110829744073699/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bondarevafitnessdoctor/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <div>
+                            {% if user.is_authenticated %}
+                            <p>Привет, {{ user.username }}!</p>
+                            <a href="{% url 'logout' %}">Выйти</a>
+                            {% else %}
+                            <p>Вход не выполнен</p>
+                            <a href="{% url 'login' %}">Войти</a>
+                            {% endif %}
+                            </div>
+                            <div class="copyright text-white">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+ <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+    </body>
+</html>

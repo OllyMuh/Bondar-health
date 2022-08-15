@@ -1,0 +1,67 @@
+{% extends 'blog/blog.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+        <div class="container">
+                <div class="row">
+
+<!--Text of the post begin-->
+                    <div class="col-lg-8">
+                        <div class="blog-items" style="margin-bottom: 20px; margin-top: 20px">
+                            <h3 style="margin: 20px">{{post.title}}</h3>
+                            <img width="730"
+                                            src="{% if post.image %}{{post.image.url}}{% else %}{% static 'img/blog/blog-1.jpg' %}{% endif %}" alt="">
+                            <p style="color: #464646">{{post.description}}</p></br>
+                            <br>
+                            {{post.text|safe}}
+                        </div>
+                    </div>
+<!--Text of the post End-->
+
+<!--                <b style="color: red">Была ли статья для вас полезной?</b><br>-->
+                <a style="color: #FFDD8D" href="{% url 'blog:blog_list' %}" class="primary-btn blog-btn">Вернуться к списку статей</a>
+                </div>
+            {% if user.is_authenticated %}
+            {% csrf_token %}
+                <div style="margin: 20px">
+                    <a style="padding: 5px;border: 2px solid; border-radius: 8px; color: white"
+                       href="{% url 'blog:post_edit' post_pk=post.pk %}"> Редактировать статью </a>
+                </div>
+
+                <div style="float: right; margin-top: -35px; margin-right: 20px">
+                    <a style="padding: 5px;border: 2px solid; border-radius: 8px; color: white"
+                       href="{% url 'blog:post_delete' post_pk=post.pk %}"> Удалить статью </a>
+                </div>
+            {% endif %}
+<!--            comments section-->
+                <div style="padding-bottom: 50px; padding-top: 20px; font-size: 14px; margin-left: 50px; text-align: justify">
+                    <h4>Комментарии ({{comments.count}})</h4>
+                    {%for i in comments%}
+                    <br><p style="color: #ffc107">{{i.author}}</p>
+                    <p style="color: #1b1e21">{{i.text}}</p>
+                    <p>{{i.published_date}}</p>
+                    {% if user.is_authenticated %}
+                    {% csrf_token %}
+                <div style="float: right; margin-top: -35px; margin-right: 20px">
+                    <a style="padding: 5px;border: 2px solid; border-radius: 8px; color:white"
+                       href="#"> Удалить комментарий </a>
+                </div>
+                    {% endif %}
+                    {% endfor %}
+                    <form action="." method="POST">
+                        {% csrf_token %}
+                        <h5 style="margin-top: 40px; margin-bottom: 20px; color: #1b1e21">Оставить комментарий:</h5>
+                        {{comment_form.as_p}}
+                    <input type="submit" class="primary-btn" value="Добавить">
+                    </form>
+
+                </div>
+<!--            comments section end-->
+
+
+        </div>
+</section>
+
+{% endblock %}

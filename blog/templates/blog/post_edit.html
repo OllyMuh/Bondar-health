@@ -1,0 +1,23 @@
+{% extends 'blog/blog.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="blog-items" style="margin-bottom: 20px; margin-top: 20px">
+                            <form action="" method="POST" enctype="multipart/form-data">
+<!--                                added enctype="multipart/form-data" to work with files-->
+                            {% csrf_token %}
+                            {{post_form.as_p}}
+                            <input type="submit" class="primary-btn" value="Добавить">
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+</section>
+{% endblock %}

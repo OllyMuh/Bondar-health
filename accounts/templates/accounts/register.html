@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+{% load widget_tweaks %}
+
+<html lang="en">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <!-- Css Style -->
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" type="text/css">
+</head>
+<body>
+<div class="container">
+	<!-- code here -->
+	<div class="card">
+		<div class="card-image">
+			<h2 class="card-heading">
+				<small>Давайте создадим аккаунт</small>
+			</h2>
+		</div>
+		<form class="card-form" method="post" action="#">
+            {% csrf_token %}
+			<div class="input">
+<!--		// username is the default name of username in django forms-->
+				{% render_field form.username type="text" class="input-field" id="exampleInputUsername" placeholder="Имя пользователя"%}
+<!--				<input type="text" class="input-field" value="{{form.username}}" required/>>>> change the {{form.username}}-->
+<!--				<label class="input-label">Имя пользователя</label>-->
+			</div>
+
+<!--			<div class="input">-->
+<!--				<input type="text" class="input-field" required/>-->
+<!--				<label class="input-label">Email</label>-->
+<!--			</div>-->
+
+			<div class="input">
+<!--				<input type="password" class="input-field" value="{{form.password1}}" required/>>>>> change the {{form.password1}}-->
+<!--			   // password1 is the default name of password in django forms-->
+			  	{% render_field form.password1 type="password" class="input-field" id="exampleInputPassword" placeholder="Пароль" %}
+<!--				<label class="input-label" >Пароль</label>-->
+			</div>
+			<div class="input">
+<!--			   // password2 is the default name of confirm password in django forms-->
+<!--				<input type="password" class="input-field" value="{{form.password2}}" required/>>>> change the {{form.password2}}-->
+			  	{% render_field form.password2 type="password" class="input-field" id="exampleInputPassword1" placeholder="Подтвердите пароль" %}
+<!--				<label class="input-label">Подтвердите пароль</label>-->
+			</div>
+			<div class="action">
+				<button type="submit" class="action-button" value="Submit">Регистрировать</button>
+			</div>
+		</form>
+<!--		<div class="card-info">-->
+<!--			<p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p>-->
+<!--		</div>-->
+	</div>
+</div>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

@@ -9,8 +9,9 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key usepython manage.py shelld in production secret!
 # SECRET_KEY = 'django-insecure-6tlf3@o*twneb=5a=*g%a3e)_lwgt%03ln3*=#gjt-q&v*_uk*'
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 'bootstrap4',
+    # 'django_static_fontawesome',
+    'widget_tweaks',
+
+    'pages',
+    'blog',
+    'elements',
+    'accounts',
+    'cart',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +137,28 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import django_on_heroku
 django_on_heroku.settings(locals())
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+
+
+CART_ID = 'cart'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'fitness_servis@mail.ru'
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'fitness_servis@mail.ru'
+EMAIL_HOST_PASSWORD = 'SJhcmYV7REwyCmsazJgx'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True

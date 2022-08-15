@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+{% load static %}
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="BondarevaFitnesStudio">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bondarevafitnessdoctor</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body style="background-color: #787878">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section set-bg" data-setbg="{% static 'img/header-bg.png' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-1">
+                    <div class="main-menu">
+<!--                        <div class="logo">-->
+<!--                            <a href="{% url 'pages:homepage' %}">-->
+<!--                                <img src="{% static 'img/logo.png' %}" alt="">-->
+<!--                            </a>-->
+<!--                        </div>-->
+                        <nav class="inner-main-navbar mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'pages:homepage' %}">Главная</a></li>
+                                <li><a href="{% url 'pages:about_us' %}">Фотогалерея</a></li>
+                                <li><a href="{% url 'elements:elements' %}">Тренажеры</a></li>
+                                <li><a href="{% url 'blog:blog_list' %}">Блог</a></li>
+                                <li><a href="{% url 'pages:contact' %}">Расписание и контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div id="mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Slider Section Begin -->
+    <section class="hero-slider">
+        <div class="slider-items owl-carousel">
+            <div class="single-slider-item set-bg" data-setbg="{% static 'img/hero-slider/hero-slider-15.JPG' %}">
+                <div class="container" style="margin-top: 15%">
+                    <span class="tickler-text" style="color: #9482AC">#bondarevafitnessdoctor</span>
+                    <h2 style="color: #9482AC">Изящество и красота не могут быть отделены от здоровья.</h2>
+                </div>
+            </div>
+            <div class="single-slider-item set-bg" data-setbg="{% static 'img/hero-slider/hero-slider-12.JPG' %}">
+                <div class="container" style="margin-top: 15%">
+                    <span class="tickler-text" style="color: #9482AC">#bondarevafitnessdoctor</span>
+                    <h2 style="color: #9482AC">Поддерживайте крепость тела, чтобы сохранить крепость духа.</h2>
+                </div>
+            </div>
+            <div class="single-slider-item set-bg" data-setbg="{% static 'img/hero-slider/hero-slider-14.JPG' %}">
+                <div class="container" style="margin-top: 15%">
+                    <span class="tickler-text" style="color: #9482AC">#bondarevafitnessdoctor</span>
+                    <h2 style="color: #9482AC">Здоровый человек есть самое драгоценное произведение природы.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Slider Section End -->
+
+    <!-- Yoga Classes Section Begin -->
+    <section style="background-color: #787878" class="yoga-classes-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="home-title">
+                        <span>#bondarevafitnessdoctor</span>
+                        <h4>&#34;Сделайте хотя бы раз то, что, по словам окружающих, вам не по плечу. <br>
+                            После этого вы уже никогда не будете обращать внимание на их правила и ограничения.&#34;
+                            </br> Джеймс Кук.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="single-classes">
+                        <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <img src="{% static 'img/joga_title.JPG' %}" alt="">
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Йога (80 минут)</h4>
+                        </div>
+                    </div>
+<!--                        <i class="flaticon-002-yin-yang"></i>-->
+<!--                        <h3>Йога</h3>-->
+                        <p style="color: #464646">
+                            Йоге больше 3000 лет <br>
+                            Вы, конечно же, тоже слышали про йогу. <br>
+                            Однако наша йога особенная!  <br>
+                            Никакой философии! <br>
+                            Только гимнастика! <br>
+                        </p>
+                    </div>
+                    <div class="accordin-elem">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card" style="background-color: #787878">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseOne">
+                                        Описание и цены
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p style="color: #464646">
+                                            Вы узнаете, какие асаны лечат почки, какие - печень, а какие - позвоночник.
+                                            <br>
+                                            Ваше тело станет гибким, молодым и здоровым.
+                                            <br>
+                                            Вы научитесь правильно дышать.
+                                            <br>
+                                            Сможете применять технику йогов для укрепления иммунитета.
+                                            <br>
+                                            Обретете душевное спокойствие.
+                                            <br>
+                                            Повысите либидо и станете желанной для своего партнёра.</p>
+                                        <p style="color: black">Стоимость занятий:
+                                        <ul>
+                                        <li><b>4</b> занятия в месяц: <b>55</b> рублей (14.25 рублей за 1 занятие)</li>
+                                        <li><b>8</b> занятий в месяц: <b>100</b> рублей (12.5 рублей за 1 занятие)</li>
+                                        <li><b>12</b> занятий в месяц: <b>130</b> рублей (10.8 рублей за 1 занятие)</li>
+                                        <li>разовое занятие: <b>17</b> рублей</li>
+                                        </ul>
+                                        </p>
+                                        <p style="color: #464646">
+                                            Абонемент не привязан к началу месяца. Его можно покупать с любого числа.
+                                        </p>
+                                        <p style="color: #464646">
+                                            Период посещения абонемента 1 месяц со дня его покупки.
+                                        </p>
+                                        <p style="color: #464646">
+                                            Пропущенные занятия сохраняются ещё 2 месяца с момента окончания действия абонемента.
+                                        </p>
+                                        <p style="color: #464646">
+                                           Пропущенные занятия модно ОТРАБОТАТЬ при покупке следующего абонемента (на любое
+                                            количество занятий) с ДОПЛАТОЙ 3 рубля.
+                                        </p>
+                                        <p style="color: #464646">
+                                            При наличии справки (больничного листа) занятия отрабатываются без доплаты
+                                            и покупки следующего абонемента в течение периода, равного количеству дней,
+                                            остающихся в абонементе с начала действия больничного.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="single-classes">
+                        <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <img src="{% static 'img/Healthy_body_title.jpg' %}" alt="">
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Здоровое тело (50 минут)</h4>
+                        </div>
+                    </div>
+<!--                        <i class="flaticon-001-meditation"></i>-->
+<!--                        <h3>Здоровое тело</h3>-->
+                        <p style="color: #464646; margin: 0">Наблюдайте и заботьтесь о своём теле, если хотите быть воистину
+                            счастливым человеком. Сегодня Вы могли бы иметь</p>
+                                        <ul style="list-style-position: inside; color:#464646; font-size:14px; font-family: Montserrat, sans-serif">
+                                            <li>здоровый позвоночник и суставы,</li>
+                                            <li>идеальную фигуру,</li>
+<!--                                            <li>уверенность в себе,</li>-->
+                                            <li>радость жизни,</li>
+                                        </ul>
+                        <p style="color: #464646">если бы месяц назад пришли на "ЗДОРОВОЕ ТЕЛО"!</p>
+                        </div>
+                    <div class="accordin-elem">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card" style="background-color: #787878">
+                                <div class="card-heading">
+                                    <a data-toggle="collapse" data-target="#collapseTwo">
+                                        Описание и цены
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                    <div class="card-body">
+<!--                                        <p style="color: #464646">"ЗДОРОВОЕ ТЕЛО" подходит Вам:</p>-->
+<!--                                        <ul style="list-style-position: inside; color:#464646; font-size:14px">-->
+<!--                                            <li>если у Вас межпозвоночная грыжа и позвоночник разваливается. Приходится колоть обезболивающие уколы и глотать таблетки...</li>-->
+<!--                                            <li>если Ваши суставы скрипят, а походка стала тяжёлой и переваливающейся...</li>-->
+<!--                                            <li>если Ваше тело стало дряблым, и мышцы утратили тонус...</li>-->
+<!--                                            <li>если Вы набрали вес...</li>-->
+<!--                                            <li>если Вы забыли о хорошем настроении, и Вас замучила депрессия...</li>-->
+<!--                                            <li>если хочется служить примером своим детям, а не только говорить о здоровом образе жизни...</li>-->
+<!--                                            <li>если быт напрочь поглотил Вас и, кроме работы и домашних дел, Вы больше ничего не видите...</li>-->
+<!--                                            <li>если Вы ищете "лично своё время", в течение которого никто Вас не побеспокоит...</li>-->
+<!--                                            <li>если Вы уже давно хотите измениться, но каждый раз что-то идёт не так!</li>-->
+<!--                                        </ul>-->
+<!--                                        <br>-->
+                                        <p style="color: #464646">
+                                            Направление собрало в себе упражнения на позвоночник, суставы, живот, бедра, ягодицы, стопы.
+                                            Тренировки повышают силу, гибкость, выносливость, равновесие.
+                                            Избавляют от лишних килограммов. Нагрузки проходят в спокойном темпе.
+                                            Пульс не превышает показатели, допустимые даже для людей с хроническими заболеваниями,
+                                            пожилых людей, людей, никогда ранее не занимавшихся фитнесом.
+                                            Использование моего авторского оборудования позволяет прорабатывать даже
+                                            те глубокие мышцы, которые обычными упражнениями не возьмёшь.
+                                        </p>
+                                        <p style="color: #464646">Направление подходит и для мужчин.
+                                            Ему нет аналогов в Витебске и по всей Беларуси!</p>
+                                        <p style="color: black">Стоимость абонемента:
+                                        <ul>
+                                        <li><b>4</b> занятия в месяц: <b>40</b> рублей (10 рублей за 1 занятие)</li>
+                                        <li><b>8</b> занятий в месяц: <b>70</b> рублей (8.75 рублей за 1 занятие)</li>
+                                        <li><b>12</b> занятий в месяц: <b>90</b> рублей (7.5 рублей за 1 занятие)</li>
+                                        <li>разовое занятие: <b>12</b> рублей</li>
+                                        </ul>
+                                        </p>
+                                        <p style="color: #464646">
+                                            Абонемент не привязан к началу месяца. Его можно покупать с любого числа.
+                                        </p>
+                                        <p style="color: #464646">
+                                            Период посещения абонемента 1 месяц со дня его покупки.
+                                        </p>
+                                        <p style="color: #464646">
+                                            Пропущенные занятия сохраняются ещё 2 месяца с момента окончания действия абонемента.
+                                        </p>
+                                        <p style="color: #464646">
+                                           Пропущенные занятия модно ОТРАБОТАТЬ при покупке следующего абонемента (на любое
+                                            количество занятий) с ДОПЛАТОЙ 3 рубля.
+                                        </p>
+                                        <p style="color: #464646">
+                                            При наличии справки (больничного листа) занятия отрабатываются без доплаты
+                                            и покупки следующего абонемента в течение периода, равного количеству дней,
+                                            остающихся в абонементе с начала действия больничного.
+                                        </p>
+<!--Могу с уверенностью заявить, что решить все эти проблемы Вам точно по силам! -->
+<!--Нужно только знать пару простых секретов! -->
+<!--Как получить доступ к этим секретам?-->
+<!--Просто прийти на "ЗДОРОВОЕ ТЕЛО"!-->
+<!--Мой многолетний опыт в фитнесе  (более 20-ти лет), врачебные знания, эксклюзивное оборудование превратят Вас в ту женщину, которой Вы всю жизнь хотели стать, но пока не смогли.-->
+<!--Только представьте, как преобразится Ваше тело после месяца тренировок!-->
+<!--Все подруги лопнут от зависти, когда увидят Вашу стройную фигуру и лёгкую походку!-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Yoga Classes Section End -->
+
+    <!-- Yoga Name Section Begin -->
+    <section class="set-bg spad" data-setbg="{% static 'img/yoga-bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="home-title">
+                        <span>#bondarevafitnessdoctor</span>
+                        <h4>
+<!--                            &#34;Я не ожидаю подходящего настроения. Если его ожидать, ничего не достигнешь.&#34; </br>-->
+                            Эксклюзивная линейка физкультурно-оздоровительных тренажеров ручной работы из природных
+                            экологически чистых материалов "HEALTH-WOOD"
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="yoga-name-section" style="margin-top: -100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <a href="{% url 'elements:elements' %}">
+                            <img src="{% static 'img/ekvilibrium.jpg' %}" alt="ekvilibrium">
+                            </a>
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Эквилибриум</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <a href="{% url 'elements:elements' %}">
+                            <img src="{% static 'img/stairs_2.jpg' %}" alt="stairs">
+                            </a>
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Лестница</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <a href="{% url 'elements:elements' %}">
+                            <img src="{% static 'img/catepillar.jpg' %}" alt="caterpillar">
+                            </a>
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Гусеница</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-yoga-name">
+                        <div class="yoga-pic">
+                            <a href="{% url 'elements:elements' %}">
+                            <img src="{% static 'img/boomerang_title.jpg' %}" alt="boomerang">
+                            </a>
+                        </div>
+                        <div class="yoga-text">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Бумеранги здоровья</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Yoga Name Section End -->
+
+    <!-- Client Section Begin -->
+    <section  style="background-color: 	#787878" class="client-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="client-left-img">
+                        <img src="{% static 'img/client-left.png' %}    " alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="client-says">
+                        <div class="section-title">
+                            <span>#bondarevafitnessdoctor</span>
+                            <h4>Что говорят клиенты</h4>
+                        </div>
+                        <div class="client-items owl-carousel">
+                            <div class="single-client-item">
+                                <p style="color: #464646">Для меня важно, когда занятия не надоедают и ты получаешь реально заряд бодрости и здоровья.
+                                За последние 14 лет занятий Надя ни разу не повторилась. И я чувствую себя прекрасно!
+                                    Все идет от сердца, что не может не притягивать снова и снова) Рекомендую всем!</p>
+                                <h5>Ольга Мухина, <span>Клиент</span></h5>
+                            </div>
+                            <div class="single-client-item">
+                                <p>На каждом занятии становишься почти идеальной для самой себя. Не хватает только селедки под шубой)</p>
+                                <h5>Ольга Цветинская, <span>Клиент</span></h5>
+                            </div>
+<!--                            <div class="single-client-item">-->
+<!--                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>-->
+<!--                                <h5>Mark Smith, <span>Client</span></h5>-->
+<!--                            </div>-->
+<!--                            <div class="single-client-item">-->
+<!--                                <p>Aenean quis velit pulvinar, pellentesque neque vel, laoreet orci. Suspendisse potenti. Donec congue vel justo eget malesuada. “True meditation is about being fully present with everything that is–including discomfort and challenges. It is not an escape from life.</p>-->
+<!--                                <h5>Muhina Ola, <span>Client</span></h5>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+
+<!--    &lt;!&ndash; Call To Action Section Begin &ndash;&gt;-->
+<!--    <section class="callto-section set-bg" data-setbg="{% static 'img/callto-bg.jpg' %}">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-12">-->
+<!--                    <div class="callto-text">-->
+<!--                        <h2>Бесплатное занятие по субботам</h2>-->
+<!--                        <a href="#" class="primary-btn callto-btn">Читать</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; Call To Action End &ndash;&gt;-->
+
+
+
+    <!-- Map Section Begin -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDhhX37AVCXLeNIgGYchUyKnU-5BMUolew&q=/улица+Кутузова+2A,+Витебск/" height="590" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- Map Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section set-bg" data-setbg="{% static 'img/footer-bg.jpg' %}">
+        <div class="container">
+            <div class="contact-inner">
+<!--                <div class="contact-form">-->
+<!--                    <div class="section-title">-->
+<!--                        <span>#bondarevafitnessdoctor</span>-->
+<!--                        <h2>Оставьте заявку (отзыв)</h2>-->
+<!--                    </div>-->
+<!--                    <form action="#">-->
+<!--                        <input type="text" placeholder="Имя">-->
+<!--                        <input type="email" placeholder="e-mail">-->
+<!--                        <input type="text" placeholder="Тема">-->
+<!--                        <textarea placeholder="Сообщение"></textarea>-->
+<!--                        <button type="submit" class="submit-btn">Отправить</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-text">
+                            <a href="{% url 'pages:homepage' %}" class="logo"><img src="{% static 'img/footer-logo.png' %}" alt=""></a>
+                            <p>Физические упражнения могут заменить множество лекарств, но ни одно лекарство в мире не может заменить физические упражнения.
+                            <ul>
+                                <li><a href="https://m.facebook.com/bondarevafitnessdoktor-110829744073699/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/bondarevafitnessdoctor/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+<!--                            {% if user.is_authenticated %}-->
+<!--                            <p>Hi {{ user.username }}!</p>-->
+<!--                            <p><a href="{% url 'logout' %}">Log out</a></p>-->
+<!--                            {% else %}-->
+<!--                                <p>You are not logged in.</p>-->
+<!--                                <a href="{% url 'login' %}">Log In</a>-->
+<!--                            {% endif %}-->
+<!--                            <a href="#">Войти</a>-->
+                            <div class="copyright text-white">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

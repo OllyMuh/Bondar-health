@@ -1,0 +1,1974 @@
+/* =================================
+------------------------------------
+  Yoga Studio | HTML Template
+  Version: 1.0
+ ------------------------------------
+ ====================================*/
+
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #111111;
+	font-weight: 600;
+	font-family: "Playfair Display", serif;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	color: #939393;
+	font-weight: 500;
+	line-height: 30px;
+	margin: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+	font-family: Flaticon;
+	font-size: 70px;
+	font-style: normal;
+}
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+
+.section-title {
+	margin-bottom: 48px;
+}
+
+.section-title span {
+	color: #9482ac;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.section-title h2 {
+	color: #464646;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.home-title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.home-title span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	color: #9482AC;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	margin-bottom: 34px;
+}
+
+.home-title span:before {
+	position: absolute;
+	left: 0;
+	top: -6px;
+	width: 100%;
+	height: 2px;
+	background: #9482AC;
+	content: "";
+}
+
+.home-title span:after {
+	position: absolute;
+	right: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 2px;
+	background: #9482AC;
+	content: "";
+}
+
+.home-title h2 {
+	color: #464646;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 52px;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.spad {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+/* buttons */
+
+.primary-btn {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 50px;
+	padding: 22px 45px;
+	color: #fff;
+	background: #9482AC;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.submit-btn {
+	color: #fff;
+	background: #FFDD8D;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	padding: 25px 70px;
+	border-radius: 50px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* Preloder */
+
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #000;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+.elements-section {
+	padding-top: 100px;
+}
+
+.el-title {
+	margin-bottom: 75px;
+}
+
+.element {
+	margin-bottom: 100px;
+}
+
+.element:last-child {
+	margin-bottom: 0;
+}
+
+/*---------------------
+  Header
+-----------------------*/
+
+.header-section {
+	height: 93px;
+	position: absolute;
+	width: 100%;
+	z-index: 33;
+}
+
+.main-menu .logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -103px;
+	top: 38px;
+}
+
+.main-menu .inner-main-navbar {
+	padding-top: 37px;
+	text-align: right;
+}
+
+.main-menu .inner-main-navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 44px;
+}
+
+.main-menu .inner-main-navbar ul li:last-child {
+	margin-right: 0;
+}
+
+.main-menu .inner-main-navbar ul li:nth-child(1) {
+	float: left;
+}
+
+.main-menu .inner-main-navbar ul li:nth-child(2) {
+	float: left;
+}
+
+.main-menu .inner-main-navbar ul li:nth-child(3) {
+	float: left;
+}
+
+.main-menu .inner-main-navbar ul li a {
+	display: inline-block;
+	padding: 5px;
+	text-transform: uppercase;
+	color: #464646;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+/*---------------------
+  Hero Slider
+-----------------------*/
+
+.hero-slider {
+	overflow: hidden;
+}
+
+.slider-items .owl-nav button[type=button] {
+	display: inline-block;
+	width: 82px;
+	height: 77px;
+	background: #9482AC;
+	border-radius: 0 30px 30px 0;
+	color: #fff;
+	font-size: 35px;
+	position: absolute;
+	left: -9px;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.slider-items .owl-nav button[type=button]:hover {
+	background: #FFDD8D;
+}
+
+.slider-items .owl-nav button[type=button].owl-next {
+	right: -9px;
+	left: auto;
+	border-radius: 30px 0 0 30px;
+}
+
+.slider-items .single-slider-item {
+	text-align: center;
+	height: 943px;
+	padding-top: 346px;
+}
+
+.slider-items .single-slider-item h1 {
+	color: #fff;
+	font-size: 120px;
+	font-weight: 700;
+	line-height: 85px;
+	margin-bottom: 42px;
+	opacity: 0;
+	position: relative;
+	top: 50px;
+}
+
+.slider-items .single-slider-item p {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	max-width: 690px;
+	margin: 0 auto 42px;
+	opacity: 0;
+	position: relative;
+	top: 50px;
+}
+
+.slider-items .single-slider-item .primary-btn {
+	opacity: 0;
+	position: relative;
+	top: 50px;
+}
+
+.slider-items .tickler-text {
+	opacity: 0;
+	position: relative;
+	top: 50px;
+}
+
+.tickler-text {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.tickler-text:before {
+	position: absolute;
+	left: 0;
+	top: -6px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: "";
+}
+
+.tickler-text:after {
+	position: absolute;
+	right: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: "";
+}
+
+.owl-item.active .single-slider-item .tickler-text,
+.owl-item.active .single-slider-item .primary-btn,
+.owl-item.active .single-slider-item h1,
+.owl-item.active .single-slider-item p {
+	top: 0;
+	opacity: 1;
+}
+
+.owl-item.active .single-slider-item .tickler-text {
+	right: 0;
+	opacity: 1;
+	-webkit-transition: all 0.5s ease 0.2s;
+	transition: all 0.5s ease 0.2s;
+}
+
+.owl-item.active .single-slider-item h1 {
+	-webkit-transition: all 0.5s ease 0.4s;
+	transition: all 0.5s ease 0.4s;
+}
+
+.owl-item.active .single-slider-item p {
+	-webkit-transition: all 0.5s ease 0.6s;
+	transition: all 0.5s ease 0.6s;
+}
+
+.owl-item.active .single-slider-item .primary-btn {
+	-webkit-transition: all 0.5s ease 0.8s;
+	transition: all 0.5s ease 0.8s;
+}
+
+/*---------------------
+  Yoga Classes
+-----------------------*/
+
+.yoga-classes-section {
+	padding-top: 128px;
+}
+
+.yoga-classes-section .single-classes {
+	text-align: center;
+}
+
+.yoga-classes-section .single-classes i {
+	color: #FFDD8D;
+	display: inline-block;
+	margin-bottom: 9px;
+}
+
+.yoga-classes-section .single-classes h3 {
+	color: #464646;
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.yoga-classes-section .single-classes p {
+	font-weight: 500;
+	color: #939393;
+}
+
+/*---------------------
+  Different Yoga
+-----------------------*/
+
+.different-yoga {
+	padding-top: 220px;
+	padding-bottom: 330px;
+}
+
+/*---------------------
+  Yoga Name
+-----------------------*/
+
+.yoga-name-section {
+	margin-top: -185px;
+}
+
+.single-yoga-name {
+	-webkit-box-shadow: 0 10px 31px -10px #c6c1c1;
+	box-shadow: 0 10px 31px -10px #c6c1c1;
+	background: #fff;
+}
+
+.single-yoga-name .yoga-pic img {
+	width: 100%;
+}
+
+.single-yoga-name .yoga-text {
+	padding-bottom: 35px;
+	padding-top: 35px;
+	text-align: center;
+}
+
+.single-yoga-name .yoga-text span {
+	color: #9482ac;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.single-yoga-name .yoga-text h4 {
+	color: #464646;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 36px;
+}
+
+/*---------------------
+  Client Sec
+-----------------------*/
+
+.client-section {
+	padding-top: 124px;
+	padding-bottom: 124px;
+}
+
+.client-says {
+	padding-top: 90px;
+}
+
+.client-says .client-items .owl-dots {
+	position: absolute;
+	left: 0;
+	bottom: -75px;
+}
+
+.client-says .client-items .owl-dots .owl-dot.active {
+	background: #9482AC;
+}
+
+.client-says .client-items .owl-dots button {
+	width: 9px;
+	height: 9px;
+	background: #EDE9F4;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.client-says .client-items .single-client-item p {
+	font-weight: 500;
+	margin-bottom: 32px;
+}
+
+.client-says .client-items .single-client-item h5 {
+	color: #9482ac;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.client-says .client-items .single-client-item h5 span {
+	color: #FFDD8D;
+}
+
+/*---------------------
+  Callto
+-----------------------*/
+
+.callto-section {
+	padding: 62px 0;
+}
+
+.callto-text h2 {
+	color: #fff;
+	float: left;
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 36px;
+	margin-top: 10px;
+}
+
+.callto-text .callto-btn {
+	float: right;
+	background: #FFDD8D;
+}
+
+/*---------------------
+  Map
+-----------------------*/
+
+.map {
+	height: 590px;
+}
+
+.map iframe {
+	width: 100%;
+}
+
+/*---------------------
+  Footer
+-----------------------*/
+
+.footer-section {
+	padding-top: 115px;
+	padding-bottom: 60px;
+	position: relative;
+}
+
+.footer-section.elem-footer {
+	padding-top: 36px;
+	padding-bottom: 20px;
+}
+
+.footer-section.elem-footer .footer-text a {
+	margin-bottom: -10px;
+}
+
+.contact-inner {
+	position: relative;
+}
+
+.contact-inner .footer-text .logo {
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.contact-inner .footer-text p {
+	font-weight: 500;
+	margin-bottom: 28px;
+}
+
+.contact-inner .footer-text ul {
+	margin-bottom: 18px;
+}
+
+.contact-inner .footer-text ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.contact-inner .footer-text ul li a {
+	display: inline-block;
+	padding: 5px;
+	margin-right: 55px;
+	color: #fff;
+}
+
+.contact-inner .footer-text .copyright {
+	color: #9482ac;
+	font-size: 11px;
+	line-height: 30px;
+	font-weight: 600;
+	opacity: 0.35;
+}
+
+.contact-inner .footer-text .copyright a {
+	color: #9482ac;
+	text-transform: uppercase;
+}
+
+.contact-inner .contact-form {
+	width: 484px;
+	padding: 60px 63px 70px 63px;
+	background: #9482AC;
+	position: absolute;
+	right: -100px;
+	top: -424px;
+}
+
+.contact-inner .contact-form .section-title {
+	margin-bottom: 56px;
+}
+
+.contact-inner .contact-form .section-title span {
+	color: #fff;
+}
+
+.contact-inner .contact-form .section-title h2 {
+	color: #fff;
+}
+
+.contact-inner .contact-form form input {
+	width: 100%;
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #B2A5C3;
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 14px;
+	margin-bottom: 25px;
+}
+
+.contact-inner .contact-form form input::-webkit-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form input::-moz-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form input:-ms-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form input::-ms-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form input::placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form textarea {
+	width: 100%;
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #B2A5C3;
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 80px;
+	resize: none;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.contact-inner .contact-form form textarea::-webkit-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form textarea::-moz-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form textarea:-ms-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form textarea::-ms-input-placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.contact-inner .contact-form form textarea::placeholder {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+}
+
+/* ---------------- Other Pages Styles ----------------- */
+
+/*---------------------
+  Hero Single
+-----------------------*/
+
+.hero-single {
+	padding-top: 175px;
+	padding-bottom: 83px;
+}
+
+.hero-item .tickler-text {
+	margin-bottom: 20px;
+}
+
+.hero-item h1 {
+	font-size: 71px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 72px;
+}
+
+/*---------------------
+  About Us
+-----------------------*/
+
+.about-us {
+	padding-top: 121px;
+	padding-bottom: 125px;
+}
+
+.about-lt .section-title {
+	margin-bottom: 36px;
+}
+
+.about-lt .section-title span {
+	margin-bottom: 10px;
+}
+
+.about-lt .section-title h2 {
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.about-lt p {
+	font-weight: 500;
+	margin-bottom: 41px;
+}
+
+/*---------------------
+  About Counter
+-----------------------*/
+
+.about-counter {
+	padding-top: 134px;
+	padding-bottom: 154px;
+}
+
+.single-counter i {
+	display: block;
+	color: #FFDD8D;
+}
+
+.single-counter .counter-num {
+	display: inline-block;
+	color: #fff;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+	line-height: 52px;
+	margin-bottom: 28px;
+}
+
+.single-counter strong {
+	display: inline-block;
+	color: #fff;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+	line-height: 52px;
+}
+
+.single-counter span {
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*---------------------
+  About Team
+-----------------------*/
+
+.about-team {
+	padding-top: 118px;
+	padding-bottom: 136px;
+}
+
+.single-team-member {
+	-webkit-box-shadow: 0 10px 31px -10px #c6c1c1;
+	box-shadow: 0 10px 31px -10px #c6c1c1;
+	position: relative;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.single-team-member:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	border: 3px solid #FFDD8D;
+	content: "";
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.single-team-member:hover:after {
+	opacity: 1;
+}
+
+.single-team-member:hover {
+	-webkit-box-shadow: 0 34px 40px -2px #A8A8A8;
+	box-shadow: 0 34px 40px -2px #A8A8A8;
+}
+
+.single-team-member .team-pic img {
+	min-width: 100%;
+}
+
+.single-team-member .team-text {
+	text-align: center;
+	padding-top: 58px;
+	padding-bottom: 55px;
+}
+
+.single-team-member .team-text span {
+	color: #9482AC;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.single-team-member .team-text h4 {
+	color: #464646;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+/*---------------------
+  About Call To Action
+-----------------------*/
+
+.about-callto-action {
+	padding-top: 112px;
+	padding-bottom: 73px;
+}
+
+.about-call-to-text h2 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 900;
+	margin-bottom: 38px;
+}
+
+.about-call-to-text p {
+	margin-bottom: 56px;
+}
+
+.about-call-to-text .about-callto-btn {
+	padding-left: 58px;
+	background: #FFDD8D;
+}
+
+/*---------------------
+  Yoga Classes Page
+-----------------------*/
+
+.yoga-classes-section.classes-page {
+	padding-top: 120px;
+	padding-bottom: 65px;
+}
+
+.yoga-classes-section.classes-page .section-title span {
+	margin-bottom: 10px;
+}
+
+.yoga-classes-section.classes-page .section-title h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 38px;
+}
+
+.yoga-classes-section.classes-page .section-title p {
+	font-size: 16px;
+}
+
+.yoga-classes-section.classes-page .single-classes {
+	margin-bottom: 43px;
+}
+
+/*---------------------
+  Yoga Price
+-----------------------*/
+
+.yoga-price {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.yoga-price .single-price-item {
+	border: 3px solid #FFDD8D;
+	border-radius: 30px;
+	padding-top: 80px;
+	padding-right: 24px;
+	padding-bottom: 80px;
+	padding-left: 36px;
+}
+
+.yoga-price .single-price-item.begginers {
+	border-color: #9482AC;
+	background: #2B2633;
+}
+
+.yoga-price .single-price-item h4 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+
+.yoga-price .single-price-item .price {
+	margin-bottom: 65px;
+}
+
+.yoga-price .single-price-item .price h2 {
+	color: #FFDD8D;
+	font-size: 48px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.yoga-price .single-price-item .price span {
+	display: block;
+	color: #9482AC;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.yoga-price .single-price-item p {
+	margin-bottom: 32px;
+}
+
+.yoga-price .single-price-item .price-btn {
+	color: #FFDD8D;
+	font-size: 16px;
+	font-weight: 500;
+	display: inline-block;
+	position: relative;
+}
+
+.yoga-price .single-price-item .price-btn:after {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	height: 2px;
+	background: #FFDD8D;
+	content: "";
+}
+
+/*---------------------
+  Discount Price
+-----------------------*/
+
+.discount-price {
+	padding-top: 110px;
+	padding-bottom: 142px;
+	background-position: bottom;
+}
+
+.discount-price .discount-text h2 {
+	color: #464646;
+	font-size: 48px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.discount-price .discount-text p {
+	margin-bottom: 34px;
+}
+
+.discount-price .discount-text ul {
+	margin-bottom: 40px;
+}
+
+.discount-price .discount-text ul li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 19px;
+}
+
+.discount-price .discount-text ul li i {
+	font-size: 28px;
+	color: #9482AC;
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+
+.discount-price .discount-text ul li span {
+	display: inline-block;
+	margin-left: 45px;
+}
+
+.discount-price .discount-text .discount-btn {
+	background: #FFDD8D;
+	padding: 22px 50px;
+}
+
+/*---------------------
+  Blog
+-----------------------*/
+
+.blog-section {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+
+.blog-items .single-blog {
+	margin-bottom: 64px;
+}
+
+.blog-items .single-blog .blog-text {
+	padding-top: 56px;
+}
+
+.blog-items .single-blog .blog-text span {
+	color: #9482AC;
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 14.4px;
+	margin-bottom: 5px;
+}
+
+.blog-items .single-blog .blog-text h2 {
+	color: #464646;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 52px;
+}
+
+.blog-items .single-blog .blog-text ul li {
+	list-style: none;
+	color: #cacaca;
+	font-size: 11px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-right: 28px;
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.blog-items .single-blog .blog-text ul li:last-child:after {
+	display: none;
+}
+
+.blog-items .single-blog .blog-text ul li:after {
+	position: absolute;
+	right: -18px;
+	content: "|";
+}
+
+.blog-items .single-blog .blog-text p {
+	margin-bottom: 46px;
+}
+
+.blog-items .single-blog .blog-text .blog-btn {
+	background: #FFDD8D;
+}
+
+.blog-pagination a {
+	display: inline-block;
+	font-size: 14px;
+	color: #464646;
+	font-weight: 600;
+	line-height: 30px;
+	margin-right: -12px;
+	width: 43px;
+	height: 43px;
+	background: transparent;
+	border-radius: 50%;
+	line-height: 43px;
+	text-align: center;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.blog-pagination a:hover {
+	background: #FFDD8D;
+	color: #fff;
+}
+
+.blog-rt .search-form {
+	margin-bottom: 68px;
+}
+
+.blog-rt .search-form form input {
+	display: inline-block;
+	border: none;
+	border-bottom: 2px solid #F3F7FB;
+	padding-bottom: 9px;
+	padding-top: 9px;
+	padding-left: 9px;
+	font-size: 14px;
+	color: #464646;
+	width: 267px;
+}
+
+.blog-rt .search-form form input[type=submit] {
+	width: 82px;
+	border-bottom: 2px solid #FFDD8D;
+	background: transparent;
+	margin-left: -4px;
+	color: #464646;
+	font-size: 14px;
+	padding-top: 9px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.blog-rt .categories-list {
+	margin-bottom: 53px;
+}
+
+.blog-rt .categories-list h5,
+.blog-rt .archive-list h5,
+.blog-rt .latest-post h5 {
+	color: #464646;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 23px;
+	position: relative;
+}
+
+.blog-rt .categories-list h5:after,
+.blog-rt .archive-list h5:after,
+.blog-rt .latest-post h5:after {
+	position: absolute;
+	left: 0;
+	top: -12px;
+	width: 67px;
+	height: 2px;
+	background: #FFDD8D;
+	content: "";
+}
+
+.blog-rt .categories-list ul li,
+.blog-rt .archive-list ul li,
+.blog-rt .latest-post ul li {
+	color: #939393;
+	list-style: none;
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: 500;
+}
+
+.blog-rt .archive-list {
+	margin-bottom: 56px;
+}
+
+.blog-rt .latest-post h5 {
+	margin-bottom: 30px;
+}
+
+.blog-rt .latest-post ul li {
+	margin-bottom: 26px;
+	line-height: 30px;
+}
+
+.blog-rt .latest-post ul li .latest-pic {
+	float: left;
+	margin-right: 14px;
+}
+
+.blog-rt .latest-post ul li .latest-pic img {
+	width: 55px;
+	height: 55px;
+}
+
+.blog-rt .latest-post ul li .latest-text {
+	display: inline-block;
+}
+
+.blog-rt .latest-post ul li .latest-text span {
+	color: #9482AC;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 16.8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.blog-rt .latest-post ul li .latest-text h6 {
+	color: #464646;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: -4px;
+}
+
+/*---------------------
+  Contact Details
+-----------------------*/
+
+.contact-details {
+	/*padding-top: 85px;*/
+	padding-bottom: 37px;
+}
+
+.contact-lt {
+	padding-top: 36px;
+}
+
+.contact-lt .section-title {
+	margin-bottom: 38px;
+}
+
+.contact-lt .section-title span {
+	margin-bottom: 10px;
+}
+
+.contact-lt .section-title h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 34px;
+}
+
+.contact-lt .address-details h5 {
+	color: #464646;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 23px;
+}
+
+.contact-lt .address-details ul li {
+	color: #939393;
+	list-style: none;
+	font-size: 14px;
+	line-height: 27px;
+	margin-bottom: 8px;
+}
+
+.yoga-schedule {
+	border: 3px solid #FFDD8D;
+	border-radius: 30px;
+	padding: 30px 55px 40px 45px;
+}
+
+.yoga-schedule .section-title {
+	margin-bottom: 35px;
+}
+
+.yoga-schedule .section-title span {
+	margin-bottom: 10px;
+}
+
+.yoga-schedule .section-title h2 {
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.yoga-schedule ul li {
+	list-style: none;
+	color: #939393;
+	font-size: 14px;
+	line-height: 30px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.yoga-schedule ul li:last-child {
+	margin-bottom: 0;
+}
+
+.yoga-schedule ul li span {
+	display: inline-block;
+	float: left;
+}
+
+.yoga-schedule ul li .time {
+	float: right;
+}
+
+/*---------------------
+  Elements
+-----------------------*/
+
+/*-- Button Elements --*/
+
+.buttons-elem {
+	padding-bottom: 104px;
+}
+
+.buttons-elem .section-title,
+.accordintab-elem .section-title,
+.milestone-counter .section-title,
+.progress-loaders .section-title,
+.icon-boxes .section-title {
+	margin-bottom: 42px;
+}
+
+.buttons-elem .section-title h2,
+.accordintab-elem .section-title h2,
+.milestone-counter .section-title h2,
+.progress-loaders .section-title h2,
+.icon-boxes .section-title h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 52px;
+}
+
+.buttons-elem .buttons .primary-btn,
+.accordintab-elem .buttons .primary-btn,
+.milestone-counter .buttons .primary-btn,
+.progress-loaders .buttons .primary-btn,
+.icon-boxes .buttons .primary-btn {
+	padding: 20px 70px;
+}
+
+.buttons-elem .buttons a,
+.accordintab-elem .buttons a,
+.milestone-counter .buttons a,
+.progress-loaders .buttons a,
+.icon-boxes .buttons a {
+	margin-right: 13px;
+}
+
+.buttons-elem .buttons a:nth-child(1),
+.accordintab-elem .buttons a:nth-child(1),
+.milestone-counter .buttons a:nth-child(1),
+.progress-loaders .buttons a:nth-child(1),
+.icon-boxes .buttons a:nth-child(1) {
+	background: #FFDD8D;
+}
+
+.buttons-elem .buttons a:nth-child(3),
+.accordintab-elem .buttons a:nth-child(3),
+.milestone-counter .buttons a:nth-child(3),
+.progress-loaders .buttons a:nth-child(3),
+.icon-boxes .buttons a:nth-child(3) {
+	background: transparent;
+	border: 3px solid #9482AC;
+	color: #464646;
+}
+
+/*-- Accordin and Tab Elements --*/
+
+.accordintab-elem {
+	padding-bottom: 92px;
+}
+
+.accordintab-elem .section-title {
+	margin-bottom: 45px;
+}
+
+.accordin-elem .card {
+	border: none;
+	margin-bottom: 13px;
+}
+
+.accordin-elem .card .card-heading {
+	background: #FFDD8D;
+	padding: 7px 30px 6px 38px;
+	border-radius: 50px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.accordin-elem .card .card-heading a {
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	display: block;
+	text-align: left;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.75px;
+	line-height: 50px;
+}
+
+.accordin-elem .card .card-body {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 30px;
+}
+
+.accordin-elem .card:first-of-type {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.accordin-elem .card:last-of-type {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.accordin-elem .card-heading a:after,
+.accordin-elem .card-heading>a.active[aria-expanded=false]:after {
+	content: "+";
+	float: right;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.accordin-elem .card-heading a[aria-expanded=true]:after,
+.accordin-elem .card-heading>a.active:after {
+	content: "-";
+	float: right;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.accordin-elem .card-heading.active {
+	background: #9482AC;
+}
+
+.accordin-elem .card-heading.active a {
+	color: #fff;
+}
+
+.accordin-elem .card-heading.active a:after {
+	color: #fff;
+}
+
+.tabs-elem .nav-tabs {
+	border-bottom: 0;
+}
+
+.tab-elem .tab-content {
+	margin-top: 30px;
+}
+
+.tab-elem .section-title {
+	margin-bottom: 52px;
+}
+
+.tab-elem .nav-tabs {
+	border-bottom: none;
+}
+
+.tab-elem .nav-tabs .nav-item {
+	background: #FFDD8D;
+	font-size: 14px;
+	margin-right: 13px;
+	border-radius: 50px;
+	line-height: 50px;
+	letter-spacing: 0.75px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.tab-elem .nav-tabs .nav-item a {
+	color: #fff;
+}
+
+.tab-elem .nav-tabs .nav-item .nav-link {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: none;
+	display: block;
+	padding: 7px 40px;
+	border-radius: 50px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #fff !important;
+	background-color: #9482AC;
+}
+
+
+
+/*-- Milestones --*/
+
+.milestone-counter {
+	padding-bottom: 105px;
+}
+
+.milestone-counter .section-title {
+	margin-bottom: 28px;
+}
+
+.milestone-counter .single-milestone-counter i {
+	color: #FFDD8D;
+	display: block;
+}
+
+.milestone-counter .single-milestone-counter .counter-num,
+.milestone-counter .single-milestone-counter strong {
+	display: inline-block;
+	color: #464646;
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 52px;
+	font-family: "Playfair Display", serif;
+	margin-bottom: 30px;
+}
+
+.milestone-counter .single-milestone-counter span {
+	display: block;
+	color: #939393;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 14.4px;
+}
+
+/*-- Progress Loaders  --*/
+
+.progress-loaders {
+	padding-bottom: 100px;
+}
+
+.progress-loaders .section-title {
+	margin-bottom: 45px;
+}
+
+.single-loader {
+	text-align: center;
+}
+
+.single-loader .loader-circle-wrap {
+	position: relative;
+}
+
+.single-loader .loader-circle-wrap .loader-percentage {
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 100%;
+	font-size: 36px;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+	color: #464646;
+	line-height: 52px;
+}
+
+.single-loader .loader-circle-wrap .inner-text {
+	position: absolute;
+	left: -5px;
+	top: 59%;
+	width: 100%;
+	font-weight: 700;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14.4px;
+	letter-spacing: 2px;
+	color: #939399;
+	display: block;
+	text-transform: uppercase;
+}
+
+/*-- Icon Boxes --*/
+
+.icon-boxes .section-title {
+	margin-bottom: 30px;
+}
+
+.single-icon-boxes i {
+	color: #FFDD8D;
+}
+
+.single-icon-boxes h3 {
+	color: #464646;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 50px;
+	margin-bottom: 14px;
+}
+
+/*---------- Responsive Media Styles ----------*/
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1176px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1330px) {
+	.contact-inner .contact-form {
+		right: -25px;
+	}
+}
+
+/* Medium Device: 1280px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.main-menu .inner-main-navbar ul li {
+		margin-right: 30px;
+	}
+	.single-yoga-name .yoga-text h4 {
+		font-size: 22px;
+	}
+	.contact-inner .contact-form {
+		right: -12px;
+	}
+	.accordin-elem .card .card-heading {
+		padding: 7px 15px 6px 20px;
+	}
+	.tab-elem .nav-tabs .nav-item .nav-link {
+		padding: 7px 25px;
+	}
+	.blog-rt .search-form form input {
+		width: 205px;
+	}
+}
+
+/* Tablet Device: 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.main-menu .inner-main-navbar ul li {
+		margin-right: 10px;
+	}
+	.slider-items .single-slider-item h1 {
+		font-size: 95px;
+	}
+	.single-yoga-name .yoga-text h4 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.yoga-classes-section .single-classes {
+		margin-bottom: 40px;
+	}
+	.yoga-price .single-price-item {
+		margin-bottom: 40px;
+	}
+	.about-lt {
+		margin-bottom: 40px;
+	}
+	.accordin-elem {
+		margin-bottom: 40px;
+	}
+	.single-loader {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.single-icon-boxes {
+		margin-bottom: 30px;
+	}
+	.blog-rt {
+		margin-top: 40px;
+	}
+	.contact-lt {
+		padding-bottom: 40px;
+	}
+	.footer-section {
+		padding-top: 50px;
+	}
+	.contact-inner .contact-form {
+		position: relative;
+		top: -200px;
+	}
+}
+
+/* Large Mobile Device: 480px */
+
+@media only screen and (max-width: 767px) {
+	.slicknav_menu {
+		display: block;
+	}
+	.inner-main-navbar {
+		display: none;
+	}
+	.slicknav_menu {
+		background: transparent;
+		margin-top: 20px;
+	}
+	.main-menu .logo {
+		left: 15px;
+		margin-left: 0;
+	}
+	.slicknav_nav {
+		background: #222;
+		padding: 20px;
+		text-align: center;
+	}
+	.slicknav_nav a {
+		padding: 15px 25px;
+	}
+	.slicknav_nav a:hover {
+		border-radius: 0;
+		background: #FFDD8D;
+		color: #fff;
+	}
+	.slicknav_nav ul {
+		margin: 0 0 0 0;
+	}
+	.slicknav_btn {
+		margin: 5px 0 30px;
+		border-radius: 0;
+	}
+	.slider-items .single-slider-item h1 {
+		font-size: 90px;
+	}
+	.callto-text .callto-btn {
+		float: none;
+	}
+	.callto-text h2 {
+		margin-bottom: 30px;
+	}
+	.single-yoga-name {
+		margin-bottom: 40px;
+	}
+	.yoga-classes-section .single-classes {
+		margin-bottom: 40px;
+	}
+	.yoga-price .single-price-item {
+		margin-bottom: 40px;
+	}
+	.yoga-price {
+		padding-bottom: 50px;
+	}
+	.client-section {
+		padding-top: 84px;
+	}
+	.about-lt {
+		margin-bottom: 40px;
+	}
+	.about-counter {
+		padding-bottom: 114px;
+	}
+	.single-counter {
+		margin-bottom: 40px;
+	}
+	.about-team {
+		padding-bottom: 96px;
+	}
+	.single-team-member {
+		margin-bottom: 40px;
+	}
+	.buttons-elem .buttons a:nth-child(1) {
+		margin-bottom: 15px;
+	}
+	.accordin-elem .card .card-heading a {
+		font-size: 11px;
+		line-height: 45px;
+	}
+	.accordin-elem {
+		margin-bottom: 40px;
+	}
+	.accordin-elem .card .card-heading {
+		padding: 7px 20px 6px 20px;
+	}
+	.tab-elem .nav-tabs .nav-item {
+		line-height: 45px;
+	}
+	.milestone-counter {
+		padding-bottom: 75px;
+	}
+	.single-milestone-counter {
+		margin-bottom: 30px;
+	}
+	.progress-loaders {
+		padding-bottom: 60px;
+	}
+	.single-loader {
+		margin-bottom: 40px;
+	}
+	.single-icon-boxes {
+		margin-bottom: 30px;
+	}
+	.blog-items .single-blog .blog-text h2 {
+		font-size: 26px;
+	}
+	.blog-rt {
+		margin-top: 40px;
+	}
+	.contact-lt {
+		padding-bottom: 40px;
+	}
+	.footer-section {
+		padding-top: 50px;
+	}
+	.contact-inner .contact-form {
+		position: relative;
+		top: -200px;
+		width: 100%;
+		right: 0;
+	}
+}
+
+/* Small Mobile Device: 320px */
+
+@media only screen and (max-width: 479px) {
+	.main-menu .logo a img {
+		width: 90%;
+	}
+	.slider-items .owl-nav button[type=button] {
+		width: 45px;
+	}
+	.slider-items .single-slider-item {
+		height: auto;
+		padding: 300px 0 250px;
+	}
+	.callto-text h2 {
+		font-size: 38px;
+	}
+	.buttons-elem .buttons a:nth-child(2) {
+		margin-bottom: 15px;
+	}
+	.accordin-elem .card .card-heading a {
+		line-height: 30px;
+	}
+	.tab-elem .nav-tabs .nav-item .nav-link {
+		padding: 7px 32px;
+	}
+	.tab-elem .nav-tabs .nav-item {
+		margin-bottom: 10px;
+	}
+	.blog-items .single-blog .blog-text h2 {
+		line-height: 30px;
+	}
+	.blog-items .single-blog .blog-text ul li {
+		margin-bottom: 10px;
+	}
+	.contact-inner .contact-form {
+		width: 100%;
+	}
+	.contact-inner .contact-form {
+		padding: 60px 25px 50px 24px;
+	}
+	.contact-inner .footer-text ul li a {
+		margin-right: 28px;
+	}
+}
