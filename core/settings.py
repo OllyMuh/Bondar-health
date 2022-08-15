@@ -160,6 +160,6 @@ DEFAULT_FROM_EMAIL = 'fitness_servis@mail.ru'
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'fitness_servis@mail.ru'
-EMAIL_HOST_PASSWORD = 'SJhcmYV7REwyCmsazJgx'
+# EMAIL_HOST_PASSWORD = 'SJhcmYV7REwyCmsazJgx'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
