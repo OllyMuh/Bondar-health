@@ -1,0 +1,445 @@
+/******************************************************************
+  Template Name: Activitar
+  Description:  Activitar Fitness HTML Template
+  Author: Colorlib
+  Author URI: https://colorlib.com
+  Version: 1.0
+  Created: Colorlib
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+
+7.  Class Time Section
+
+
+/*---------------------
+  Classes Time Table Section
+-----------------------*/
+
+.classtime-section {
+	background: #151515;
+	padding-top: 90px;
+}
+
+.classtime-section .section-title {
+	margin-bottom: 48px;
+}
+
+.timetable-controls {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.timetable-controls ul li {
+	list-style: none;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: inline-block;
+	margin-right: 80px;
+	cursor: pointer;
+	position: relative;
+}
+
+.timetable-controls ul li.active {
+	color: #e4381C;
+}
+
+.timetable-controls ul li.active:after {
+	opacity: 1;
+}
+
+.timetable-controls ul li:after {
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	width: 100%;
+	height: 2px;
+	background: #e4381C;
+	content: "";
+	opacity: 0;
+}
+
+.timetable-controls ul li:last-child {
+	margin-right: 0;
+}
+
+.classtime-table .ts-item {
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.classtime-table.filtering .ts-item {
+	opacity: 0;
+}
+
+.classtime-table.filtering .ts-item.show {
+	opacity: 1;
+}
+
+.classtime-table table {
+	width: 100%;
+	border: 1px solid #1f1f1f;
+	background: #212121;
+	text-align: center;
+}
+
+.classtime-table table thead tr th {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: "Oswald", sans-serif;
+	padding: 25px 5px;
+}
+
+.classtime-table table tbody {
+	border-top: 1px solid #171717;
+}
+
+.classtime-table table tbody tr td {
+	text-align: center;
+	border-right: 1px solid #171717;
+	border-bottom: 1px solid #171717;
+	width: 146px;
+	padding: 26px 10px 28px;
+	position: relative;
+	z-index: 1;
+}
+
+.classtime-table table tbody tr td:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, right top, from(#e16521), to(#e4381C));
+	background: -o-linear-gradient(left, #e16521, #e4381C);
+	background: linear-gradient(to right, #e16521, #e4381C);
+	content: "";
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.classtime-table table tbody tr td.hover-bg:hover:after {
+	opacity: 1;
+}
+
+.classtime-table table tbody tr td.hover-bg:hover h6 {
+	color: #ffffff;
+}
+
+.classtime-table table tbody tr td.workout-time {
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Oswald", sans-serif;
+}
+
+.classtime-table table tbody tr td span {
+	font-size: 16px;
+	color: #ffffff;
+	display: block;
+	margin-bottom: 7px;
+}
+
+.classtime-table table tbody tr td h6 {
+	color: #FFDD8D;
+	font-weight: 500;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+/* ----------------------------------- Other Pages Styles ------------------------------*/
+
+/*---------------------
+  Breadcrumb Section
+-----------------------*/
+
+.breadcrumb-section {
+	padding-bottom: 105px;
+}
+
+.breadcrumb-text {
+	text-align: center;
+}
+
+.breadcrumb-text h2 {
+	font-size: 48px;
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+
+.breadcrumb-text .breadcrumb-controls a {
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 15px;
+	position: relative;
+}
+
+.breadcrumb-text .breadcrumb-controls a:after {
+	position: absolute;
+	right: -13px;
+	top: -2px;
+	content: "";
+	font-family: "FontAwesome";
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.breadcrumb-text .breadcrumb-controls a i {
+	margin-right: 2px;
+}
+
+.breadcrumb-text .breadcrumb-controls span {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+
+/*---------------------------- Other Pages Styles ------------------------------*/
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+
+/* Medium Device : 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.header-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.top-social a {
+		margin-left: 15px;
+	}
+}
+
+/* Tablet Device : 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.header-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-menu {
+		text-align: right;
+	}
+	.nav-menu .mainmenu ul li {
+		margin-right: 25px;
+	}
+	.nav-menu .mainmenu ul li .dropdown {
+		left: auto;
+		right: 0;
+	}
+	.top-social {
+		display: none;
+	}
+	.hero-items .owl-nav button[type=button] {
+		left: 15px;
+	}
+	.hero-items .owl-nav button[type=button].owl-next {
+		right: 15px;
+	}
+	.about-text {
+		margin-bottom: 30px;
+	}
+	.timetable-controls ul li {
+		margin-right: 50px;
+	}
+	.cta-section .cta-text {
+		float: none;
+	}
+	.cta-section .primary-btn.cta-btn {
+		float: none;
+	}
+	.blog-single-sidebar {
+		padding-top: 30px;
+	}
+	.recent-item {
+		margin-bottom: 30px;
+	}
+}
+
+/* Large Mobile : 480px */
+
+@media only screen and (max-width: 767px) {
+	.header-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-menu .mainmenu {
+		display: none;
+	}
+	.top-social {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background: transparent;
+		padding: 0;
+	}
+	.slicknav_btn {
+		margin: 0;
+		border-radius: 0;
+	}
+	.header-normal .slicknav_btn {
+		margin: 37px 0;
+	}
+	.slicknav_nav {
+		background: #222;
+	}
+	.slicknav_nav ul {
+		margin: 10px 15px;
+	}
+	.slicknav_nav a {
+		padding: 8px 10px;
+	}
+	.slicknav_nav a:hover,
+	.slicknav_nav .slicknav_row:hover {
+		border-radius: 0;
+		background: #e4381C;
+		color: #ffffff;
+	}
+	.hero-items .owl-nav button[type=button] {
+		left: 5px;
+	}
+	.hero-items .owl-nav button[type=button].owl-next {
+		left: auto;
+		right: 5px;
+	}
+	.single-hero-item {
+		height: 680px;
+	}
+	.single-hero-item .hero-text h1 {
+		font-size: 70px;
+	}
+	.single-hero-item .hero-text h2 {
+		font-size: 50px;
+	}
+	.about-text {
+		margin-bottom: 30px;
+	}
+	.classtime-table {
+		overflow-x: auto;
+	}
+	.timetable-controls ul li {
+		margin-right: 12px;
+	}
+	.cta-section .cta-text {
+		float: none;
+	}
+	.cta-section .primary-btn.cta-btn {
+		float: none;
+	}
+	.blog-option .blog-pagination {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.blog-option .blog-option-right {
+		float: none;
+	}
+	.bs-hero-text ul li {
+		margin-right: 45px;
+	}
+	.bs-hero-text ul li:after {
+		right: -27px;
+	}
+	.blog-single-sidebar {
+		padding-top: 30px;
+	}
+	.recent-item {
+		margin-bottom: 30px;
+	}
+	.map-contact-detalis {
+		right: 30px;
+	}
+}
+
+/* Small Mobile : 320px */
+
+@media only screen and (max-width: 479px) {
+	.section-title h2,
+	.breadcrumb-text h2 {
+		font-size: 30px;
+	}
+	.slicknav_menu {
+		text-align: center;
+	}
+	.slicknav_nav {
+		text-align: left;
+	}
+	.logo {
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.slicknav_btn {
+		float: none;
+		display: inline-block;
+	}
+	.slicknav_nav ul {
+		margin: 10px 0 10px 0;
+	}
+	.slicknav_nav .slicknav_row,
+	.slicknav_nav a {
+		margin: 0;
+	}
+	.header-normal .slicknav_btn {
+		margin: 0 0 10px 0;
+	}
+	.header-section.header-normal .logo {
+		padding: 18px 0 5px;
+	}
+	.single-hero-item .hero-text h1 {
+		font-size: 50px;
+	}
+	.single-hero-item .hero-text h2 {
+		font-size: 40px;
+	}
+	.hero-items .owl-nav button[type=button] {
+		left: -15px;
+	}
+	.hero-items .owl-nav button[type=button].owl-next {
+		right: 15px;
+	}
+	.map-contact-detalis {
+		width: 319px;
+		right: 0;
+	}
+	.video-section .video-text {
+		padding-top: 100px;
+	}
+	.timetable-controls ul li {
+		margin-right: 5px;
+		margin-bottom: 12px;
+	}
+	.gallery-controls ul li {
+		margin-right: 8px;
+	}
+	.blog-single-text .blog-tag-share .tags {
+		float: none;
+		margin-bottom: 10px;
+	}
+	.blog-single-text .blog-tag-share .social-share {
+		float: none;
+	}
+	.contact-map .map-hover {
+		left: 15%;
+	}
+}
