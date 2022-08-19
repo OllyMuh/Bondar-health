@@ -5,12 +5,15 @@ from django.core.mail import send_mail, BadHeaderError
 from pages.forms import ContactForm
 from pages.models import CategoryPhoto, Photo
 
+# import logging
+# logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d %I:%M:%S %p', handlers=[logging.handlers.SMTPHandler('smtp.mail.ru', 'fitness_servis@mail.ru', ['fitness_servis@mail.ru'], 'LYYDownloader Server Exception', credentials=('fitness_servis@mail.ru', 'SJhcmYV7REwyCmsazJgx'))])
 
 def homepage(request):
     return render(request, 'index.html')
 
 
 def about_us(request):
+    # breakpoint()
     categories = CategoryPhoto.objects.all()
     photos = Photo.objects.all()
     context = {

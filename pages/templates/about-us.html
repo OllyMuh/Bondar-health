@@ -27,7 +27,6 @@
 </head>
 
 <body style="background-color: #787878">
-
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -41,7 +40,6 @@
                     <div class="main-menu">
                         <div class="logo">
                             <a href="{% url 'pages:homepage' %}">
-<!--                                <img src="{% static 'img/logo.png' %}" alt="">-->
                             </a>
                         </div>
                         <nav class="inner-main-navbar mobile-menu">
@@ -145,21 +143,6 @@
                         <span>Инструктор</span>
                     </div>
                 </div>
-<!--                <div class="col-lg-3 col-md-3 text-center">-->
-<!--                    <div class="single-counter">-->
-<!--                        <i class="flaticon-010-chakra"></i>-->
-<!--                        <span class="counter-num counter">49</span>-->
-<!--                        <strong>k</strong>-->
-<!--                        <span>Подписчиков</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-3 col-md-3 text-center">-->
-<!--                    <div class="single-counter">-->
-<!--                        <i class="flaticon-009-yoga-1"></i>-->
-<!--                        <span class="counter-num counter">15</span>-->
-<!--                        <span>Орденов и медалей</span>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
         </div>
     </div>
@@ -179,7 +162,7 @@
                       <button class="primary-btn" style="margin: 10px"><a style="color: azure" href="{% url 'pages:about_us' %}">Все</a></button>
                       {% for category_photo in categories %}
                       <button class="primary-btn" style="margin: 10px">
-                          <a style="color: azure" href="{% url 'pages:photo_filter' category_photo.pk %}">{{category_photo.title}}</a></button>
+                          <a style="color: azure" href="{% url 'pages:photo_filter/' category_photo.pk %}">{{category_photo.title}}</a></button>
                       {% endfor %}
                   </div>
                 </div>
@@ -194,16 +177,10 @@
 <!--                        </a>-->
                     </div>
                     {% endfor %}
-<!--                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">-->
-<!--                        <a href="#" class="item-wrap fancybox">-->
-<!--                          <span class="icon-search2"></span>-->
-<!--                          <img class="img-fluid" src="{% static 'img/yoga-2.jpg' %}">-->
-<!--                        </a>-->
-<!--                    </div>-->
             </div>
         </div>
     </section>
-    <!-- Gallery Section Begin -->
+    <!-- Gallery Section End -->
 
     <!-- Map Section Begin -->
     <div class="map">
