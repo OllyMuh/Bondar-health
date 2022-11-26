@@ -162,7 +162,7 @@
                       <button class="primary-btn" style="margin: 10px"><a style="color: azure" href="{% url 'pages:about_us' %}">Все</a></button>
                       {% for category_photo in categories %}
                       <button class="primary-btn" style="margin: 10px">
-                          <a style="color: azure" href="{% url 'pages:photo_filter/' category_photo.pk %}">{{category_photo.title}}</a></button>
+                          <a style="color: azure" href="{% url 'pages:photo_filter' category_photo.pk %}">{{category_photo.title}}</a></button>
                       {% endfor %}
                   </div>
                 </div>
