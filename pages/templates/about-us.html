@@ -148,38 +148,139 @@
     </div>
     <!-- About Counter End -->
 
-    <!-- Gallery Section Begin -->
-    <section  class="about-team spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 heading-wrap text-center mb-5">
-                    <h2 class="mb-5">Фотогалерея</h2>
-                </div>
-                </div>
+<!--    Gallery section begin (temp)-->
+      <section class="site-section" id="gallery-section">
+      <div class="container">
 
-                <div class="row justify-content-center mb-5" data-aos="fade">
-                  <div class="filters text-center button-group col-md-12">
-                      <button class="primary-btn" style="margin: 10px"><a style="color: azure" href="{% url 'pages:about_us' %}">Все</a></button>
-                      {% for category_photo in categories %}
-                      <button class="primary-btn" style="margin: 10px">
-                          <a style="color: azure" href="{% url 'pages:photo_filter' category_photo.pk %}">{{category_photo.title}}</a></button>
-                      {% endfor %}
-                  </div>
-                </div>
+<!--        <div class="row justify-content-center mb-5" data-aos="fade">-->
+<!--          <div id="filters" class="filters text-center button-group col-md-7">-->
+<!--            <button class="btn btn-primary active" data-filter="*">All</button>-->
+<!--            <button class="btn btn-primary" data-filter=".web">Classes</button>-->
+<!--            <button class="btn btn-primary" data-filter=".design">Intern</button>-->
+<!--            <button class="btn btn-primary" data-filter=".brand">Training</button>-->
+<!--          </div>-->
+<!--        </div>-->
 
-                <div id="posts" class="row no-gutter" style="position: relative">
-                    {% for photo in photos %}
-                    <div class="item col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-<!--                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" style="position: absolute; left: 0px; top: 0px;">-->
-<!--                        <a href="#" class="item-wrap fancybox">-->
-<!--                          <span class="icon-search2"></span>-->
-                        <img class="img-fluid" src="{{photo.image.url}}" alt="foto">
-<!--                        </a>-->
-                    </div>
-                    {% endfor %}
-            </div>
+        <div id="posts" class="row no-gutter">
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+            <a href="{% static 'img/gallery/h_body_1.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/h_body_1.jpg' %}">
+            </a>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+            <a href="{% static 'img/gallery/h_body_3.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/h_body_3.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4 mt-4">
+            <a href="{% static 'img/gallery/h_body_4.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/h_body_4.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+
+            <a href="{% static 'img/gallery/h_body_5.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/h_body_5.jpg' %}">
+            </a>
+
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/h_body_6.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/h_body_6.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/yoga_8.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/yoga_8.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/Healthy_body_4.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/Healthy_body_4.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/Yoga_3.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/Yoga_3.jpg' %}">
+            </a>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/yoga_3.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/yoga_3.jpg' %}">
+            </a>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/yoga_1.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/yoga_1.jpg' %}">
+            </a>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/yoga_5.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/yoga_5.jpg' %}">
+            </a>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="{% static 'img/gallery/yoga_4.jpg' %}" class="item-wrap fancybox">
+              <span class="icon-search2"></span>
+              <img class="img-fluid" src="{% static 'img/gallery/yoga_4.jpg' %}">
+            </a>
+          </div>
         </div>
+      </div>
     </section>
+<!--Gallery section end (temp)-->
+
+
+    <!-- Gallery Section Begin -->
+<!--    <section  class="about-team spad">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-12 heading-wrap text-center mb-5">-->
+<!--                    <h2 class="mb-5">Фотогалерея</h2>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="row justify-content-center mb-5" data-aos="fade">-->
+<!--                  <div class="filters text-center button-group col-md-12">-->
+<!--                      <button class="primary-btn" style="margin: 10px"><a style="color: azure" href="{% url 'pages:about_us' %}">Все</a></button>-->
+<!--                      {% for category_photo in categories %}-->
+<!--                      <button class="primary-btn" style="margin: 10px">-->
+<!--                          <a style="color: azure" href="{% url 'pages:photo_filter' category_photo.pk %}">{{category_photo.title}}</a></button>-->
+<!--                      {% endfor %}-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div id="posts" class="row no-gutter" style="position: relative">-->
+<!--                    {% for photo in photos %}-->
+<!--                    <div class="item col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">-->
+<!--&lt;!&ndash;                    <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4" style="position: absolute; left: 0px; top: 0px;">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <a href="#" class="item-wrap fancybox">&ndash;&gt;-->
+<!--&lt;!&ndash;                          <span class="icon-search2"></span>&ndash;&gt;-->
+<!--                        <img class="img-fluid" src="{{photo.image.url}}" alt="foto">-->
+<!--&lt;!&ndash;                        </a>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    {% endfor %}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
     <!-- Gallery Section End -->
 
     <!-- Map Section Begin -->
