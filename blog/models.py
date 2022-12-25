@@ -68,7 +68,7 @@ class Comments(models.Model):
     published_date = models.DateTimeField(
         verbose_name='Дата публикации',
     )
-    author = models.CharField(max_length=40, blank=True, null=True, default='Аноним', verbose_name='Автор')
+    author = models.CharField(max_length=40, blank=True, null=True, default='', verbose_name='Автор')
 
     def __str__(self):
         return f'{self.text}'

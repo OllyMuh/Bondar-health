@@ -90,8 +90,8 @@
                         {% for post in page.object_list %}
                         <div class="single-blog">
                             <div class="blog-pic">
-                                <img width="730"
-                                        src="{% if post.image %}{{post.image.url}}{% else %}{% static 'img/hero-slider-13.JPG' %}{% endif %}" alt="">
+                                <img width="730" src="{{post.image.url}}" alt="">
+<!--                                        src="{% if post.image %}{{post.image.url}}{% else %}{% static 'img/hero-slider-13.JPG' %}{% endif %}" alt="">-->
                             </div>
                             <div class="blog-text">
                                 <span>{{post.published}}</span>
@@ -99,7 +99,6 @@
                                 <ul>
                                     <li>By #bondarevafitnesdoctor</li>
                                     <li>{{post.category}}</li>
-<!--                                    <li>Hatha, tips, tricks</li>-->
                                 </ul>
                                 <p>{{post.description}}...</p>
                                 <a href="{% url 'blog:post_detail' post.pk %}" class="primary-btn blog-btn">Читать</a>
