@@ -11,11 +11,13 @@
                     <div class="col-lg-8">
                         <div class="blog-items" style="margin-bottom: 20px; margin-top: 20px">
                             <h3 style="margin: 20px">{{post.title}}</h3>
-                            <img width="730"
-                                            src="{% if post.image %}{{post.image.url}}{% else %}{% static 'img/blog/blog-1.jpg' %}{% endif %}" alt="">
-                            <p style="color: #464646">{{post.description}}</p></br>
+                            <img width="730" src="{% if post.image %}{{post.image.url}}{% else %}{% static 'img/blog/blog-1.jpg' %}{% endif %}" alt="">
+                            <br>
+                            {{post.description}}
+                            <br>
                             <br>
                             {{post.text|safe}}
+                            <br>
                         </div>
                     </div>
 <!--Text of the post End-->

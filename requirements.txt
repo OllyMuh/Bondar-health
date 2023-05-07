@@ -18,4 +18,3 @@ django-widget-tweaks==1.4.12
 weasyprint==56.1
 zopfli==0.2.1
 
-

@@ -2,6 +2,7 @@ from django.db import models
 
 from django.db import models
 from django.utils import timezone
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Category(models.Model):
@@ -26,9 +27,12 @@ class Post(models.Model):
         verbose_name='описание',
         blank=True, null=True
     )
-    text = models.TextField(
+    # text = models.TextField(
+    #     verbose_name='текст'
+    #)
+    text = RichTextUploadingField(
         verbose_name='текст'
-    )
+    )                                   # CKEditor Rich Text Field
     image = models.ImageField(
         upload_to='blog',
         verbose_name='картинка',
